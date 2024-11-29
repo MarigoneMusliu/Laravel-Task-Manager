@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
  
-class Task extends Model
+class Reservation extends Model
 {
 	public $timestamps = false;
-    protected $table = 'crudapp_tasks';
+    protected $table = 'crudapp_reservation';
     protected $primaryKey = 'id';
-    protected $fillable = ['Titulli', 'Pershkrimi', 'Statusi'];
+    protected $fillable = ['HotelName_umhr', 'VisitorName_umhr', 'RoomType_umhr', 'RegisteredDate', 'LeavingDate'];
 	
 }

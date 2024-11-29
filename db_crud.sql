@@ -24,14 +24,14 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `crudapp_task`
+-- Table structure for table `crudapp_reservation`
 --
 
-CREATE TABLE `crudapp_task` (
+CREATE TABLE `crudapp_reservation` (
   `id` bigint(20) NOT NULL,
-  `Titulli` varchar(255) DEFAULT NULL,
-  `Pershkrimi` varchar(255) DEFAULT NULL,
-  `Statusi` varchar(255) DEFAULT NULL,
+  `HotelName_umhr` varchar(255) DEFAULT NULL,
+  `VisitorName_umhr` varchar(255) DEFAULT NULL,
+  `RoomType_umhr` varchar(255) DEFAULT NULL,
   `RegisteredDate` datetime(6) NOT NULL DEFAULT current_timestamp(6)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 --
@@ -39,9 +39,9 @@ CREATE TABLE `crudapp_task` (
 --
 
 --
--- Indexes for table `crudapp_task`
+-- Indexes for table `crudapp_reservation`
 --
-ALTER TABLE `crudapp_task`
+ALTER TABLE `crudapp_reservation`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -49,9 +49,9 @@ ALTER TABLE `crudapp_task`
 --
 
 --
--- AUTO_INCREMENT for table `crudapp_task`
+-- AUTO_INCREMENT for table `crudapp_reservation`
 --
-ALTER TABLE `crudapp_task`
+ALTER TABLE `crudapp_reservation`
   MODIFY `id` bigint(20) NOT NULL AUTO_INCREMENT;
 COMMIT;
 

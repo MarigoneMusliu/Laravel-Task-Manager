@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TaskController;
+use App\Http\Controllers\ReservationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +23,5 @@ Route::get('/', function () {
 //Route::resource(hotel, HotelController::class);
 //ketu eshte shtuar kodi ne vijim - prej ketu hapet projekti
 //Route::resource('hotel','App\Http\Controllers\HotelController');
-Route::resource('task','App\Http\Controllers\TaskController');
+Route::resource('reservation','App\Http\Controllers\ReservationController');
 
